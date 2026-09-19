@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071a36">
+  <meta name="description" content="Swapnil Jagtap, Regional Sales Manager – West India at EMTEX Industrial Solutions. Explore industrial marking, laser processing, automation, traceability and inspection solutions.">
+  <title>Swapnil Jagtap | EMTEX Industrial Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Roboto+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23071a36'/%3E%3Cpath d='M13 17h38v9H24v7h23v8H24v7h27v9H13z' fill='%23fff'/%3E%3Cpath d='M44 9h9v9h-9z' fill='%23e1262f'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --navy: #071a36;
+      --navy-2: #0b2853;
+      --blue: #164d91;
+      --blue-bright: #2474c8;
+      --red: #e1262f;
+      --ice: #edf5ff;
+      --line: #dbe7f4;
+      --muted: #5b6b80;
+      --white: #ffffff;
+      --shadow: 0 24px 60px rgba(7, 26, 54, .13);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #f7faff;
+      color: var(--navy);
+      font-family: "DM Sans", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px; margin: 0 0 14px;
+      color: var(--blue); font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--red); }
+    h1, h2, h3 { margin: 0; line-height: 1.08; }
+    h1, h2 { font-family: "Roboto Condensed", "Arial Narrow", sans-serif; text-transform: uppercase; }
+    h1 { font-size: clamp(3rem, 7vw, 6.5rem); letter-spacing: -.045em; }
+    h2 { font-size: clamp(2.15rem, 4vw, 4.15rem); letter-spacing: -.035em; }
+    h3 { font-size: 1.2rem; }
+    p { margin: 0; }
+    .section { padding: 104px 0; }
+    .section-head { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 46px; }
+    .section-copy { color: var(--muted); max-width: 630px; }
+
+    .topbar { background: var(--navy); color: rgba(255,255,255,.82); font-size: .8rem; }
+    .topbar .container { min-height: 38px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .topbar-meta { display: flex; gap: 24px; }
+    .topbar a { text-decoration: none; }
+    .topbar a:hover { color: #fff; }
+
+    .nav {
+      position: sticky; top: 0; z-index: 80; background: rgba(255,255,255,.92);
+      border-bottom: 1px solid rgba(7,26,54,.08); backdrop-filter: blur(16px);
+    }
+    .nav .container { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand img { width: 188px; height: auto; }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-links a { text-decoration: none; font-size: .88rem; font-weight: 700; }
+    .nav-links a:hover { color: var(--blue-bright); }
+    .nav-cta { padding: 11px 18px; border-radius: 999px; background: var(--blue); color: white !important; }
+    .menu-button { display: none; border: 0; background: transparent; padding: 8px; color: var(--navy); }
+
+    .hero {
+      position: relative; min-height: 740px; display: grid; align-items: center; overflow: hidden;
+      background:
+        linear-gradient(118deg, rgba(7,26,54,.98) 0%, rgba(7,26,54,.96) 50%, rgba(11,40,83,.89) 100%);
+      color: #fff;
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: 0; opacity: .15;
+      background-image: linear-gradient(rgba(255,255,255,.18) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.18) 1px, transparent 1px);
+      background-size: 58px 58px; mask-image: linear-gradient(90deg, transparent, #000 45%);
+    }
+    .hero::after {
+      content: ""; position: absolute; width: 620px; height: 620px; right: -210px; top: 90px;
+      border: 80px solid rgba(36,116,200,.22); border-radius: 50%; box-shadow: 0 0 0 80px rgba(36,116,200,.08);
+    }
+    .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.25fr .75fr; gap: 60px; align-items: center; padding: 74px 0; }
+    .hero .eyebrow { color: #8fc4ff; }
+    .hero h1 span { display: block; color: #8fc4ff; }
+    .hero-lead { max-width: 710px; margin: 24px 0 32px; color: rgba(255,255,255,.76); font-size: 1.12rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px;
+      padding: 0 21px; border: 1px solid transparent; border-radius: 10px; text-decoration: none;
+      font-weight: 700; transition: transform .25s, box-shadow .25s, background .25s;
+    }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,.18); }
+    .button-primary { background: var(--red); color: white; }
+    .button-secondary { background: #fff; color: var(--navy); }
+    .button-ghost { border-color: rgba(255,255,255,.28); color: #fff; background: rgba(255,255,255,.05); }
+    .button svg { width: 19px; height: 19px; }
+
+    .profile-card {
+      position: relative; padding: 34px; border: 1px solid rgba(255,255,255,.18); border-radius: 30px;
+      background: linear-gradient(145deg, rgba(255,255,255,.14), rgba(255,255,255,.06));
+      box-shadow: 0 28px 70px rgba(0,0,0,.25); backdrop-filter: blur(14px);
+    }
+    .profile-card::after { content: ""; position: absolute; left: 0; top: 34px; width: 5px; height: 78px; background: var(--red); }
+    .avatar {
+      width: 132px; height: 132px; display: grid; place-items: center; margin-bottom: 28px;
+      background: linear-gradient(145deg, #fff, #cce2fa); color: var(--blue); border: 6px solid rgba(255,255,255,.22);
+      border-radius: 50%; font: 700 2.8rem/1 "Roboto Condensed", sans-serif;
+    }
+    .profile-card h3 { font-size: 1.8rem; }
+    .profile-role { color: #8fc4ff; font-weight: 700; margin: 7px 0 22px; }
+    .profile-meta { display: grid; gap: 11px; color: rgba(255,255,255,.76); font-size: .92rem; }
+    .profile-meta span { display: flex; gap: 10px; align-items: flex-start; }
+    .profile-meta b { color: white; font-weight: 600; }
+    .mini-rule { width: 100%; height: 1px; background: rgba(255,255,255,.14); margin: 24px 0; }
+    .profile-note { color: rgba(255,255,255,.7); font-size: .9rem; }
+
+    .quick-actions { position: relative; z-index: 3; margin-top: -34px; }
+    .action-grid { display: grid; grid-template-columns: repeat(6, 1fr); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); background: #fff; }
+    .action {
+      min-height: 108px; display: grid; place-items: center; align-content: center; gap: 7px; padding: 16px;
+      border-right: 1px solid var(--line); text-decoration: none; text-align: center; font-weight: 700; transition: .25s;
+    }
+    .action:last-child { border-right: 0; }
+    .action svg { width: 23px; height: 23px; color: var(--blue); }
+    .action small { color: var(--muted); font-weight: 500; }
+    .action:hover { background: var(--blue); color: #fff; }
+    .action:hover svg, .action:hover small { color: #fff; }
+
+    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 72px; align-items: center; }
+    .about-visual { position: relative; min-height: 470px; padding: 48px; border-radius: var(--radius); overflow: hidden; background: var(--navy); color: #fff; }
+    .about-visual::before { content: "1987"; position: absolute; right: -10px; bottom: -38px; color: rgba(255,255,255,.06); font: 700 11rem/1 "Roboto Condensed"; }
+    .about-visual .big-number { font: 700 clamp(4.5rem, 9vw, 8rem)/.9 "Roboto Condensed"; color: #fff; letter-spacing: -.06em; }
+    .about-visual .big-number span { color: var(--red); }
+    .about-visual p { max-width: 360px; margin-top: 18px; color: rgba(255,255,255,.72); }
+    .capability-tags { position: absolute; left: 48px; right: 48px; bottom: 46px; display: flex; flex-wrap: wrap; gap: 9px; }
+    .capability-tags span { padding: 8px 12px; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; font-size: .78rem; }
+    .about-copy p { color: var(--muted); margin-top: 22px; }
+    .about-points { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+    .about-point { padding: 18px; border-left: 3px solid var(--red); background: #fff; box-shadow: 0 12px 30px rgba(7,26,54,.06); }
+    .about-point b { display: block; margin-bottom: 4px; }
+    .about-point span { color: var(--muted); font-size: .88rem; }
+
+    .products { background: var(--navy); color: #fff; overflow: hidden; }
+    .products .section-copy { color: rgba(255,255,255,.68); }
+    .products .eyebrow { color: #8fc4ff; }
+    .slider { position: relative; overflow: hidden; border-radius: 28px; box-shadow: 0 30px 80px rgba(0,0,0,.3); }
+    .slides { display: flex; transition: transform .7s cubic-bezier(.2,.8,.2,1); }
+    .slide { position: relative; min-width: 100%; aspect-ratio: 1536/466; background: #dfe9f5; overflow: hidden; }
+    .slide img { width: 100%; height: 100%; object-fit: cover; }
+    .slide-overlay { position: absolute; inset: auto 0 0; padding: 50px 40px 28px; background: linear-gradient(transparent, rgba(7,26,54,.92)); display: flex; justify-content: space-between; align-items: end; gap: 24px; }
+    .slide-overlay h3 { font-size: clamp(1.2rem, 3vw, 2.15rem); }
+    .slide-overlay p { color: rgba(255,255,255,.72); font-size: .9rem; }
+    .slider-controls { display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 24px; }
+    .slider-arrow { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.28); border-radius: 50%; background: transparent; color: #fff; cursor: pointer; }
+    .dots { display: flex; gap: 9px; }
+    .dot { width: 9px; height: 9px; border: 0; border-radius: 50%; background: rgba(255,255,255,.3); padding: 0; cursor: pointer; }
+    .dot.active { width: 28px; border-radius: 99px; background: var(--red); }
+    .product-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 44px; }
+    .product-mini { padding: 22px; border: 1px solid rgba(255,255,255,.12); border-radius: 16px; background: rgba(255,255,255,.04); }
+    .product-mini span { color: #8fc4ff; font-size: .75rem; font-weight: 700; letter-spacing: .12em; }
+    .product-mini h3 { margin: 9px 0; }
+    .product-mini p { color: rgba(255,255,255,.62); font-size: .87rem; }
+
+    .industries-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .industry-card { position: relative; min-height: 220px; padding: 28px; border: 1px solid var(--line); border-radius: 20px; background: #fff; overflow: hidden; transition: .3s; }
+    .industry-card::after { content: attr(data-index); position: absolute; right: 16px; bottom: -24px; color: #eff5fb; font: 700 6rem/1 "Roboto Condensed"; }
+    .industry-card:hover { transform: translateY(-5px); border-color: #a7c9ed; box-shadow: var(--shadow); }
+    .industry-icon { width: 46px; height: 46px; display: grid; place-items: center; margin-bottom: 30px; border-radius: 12px; background: var(--ice); color: var(--blue); font-size: 1.3rem; }
+    .industry-card p { position: relative; z-index: 2; margin-top: 10px; color: var(--muted); font-size: .9rem; }
+
+    .customers { background: #eaf3fd; }
+    .customer-rail { position: relative; overflow: hidden; padding: 8px 0 16px; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+    .customer-track { width: max-content; display: flex; gap: 14px; animation: marquee 34s linear infinite; }
+    .customer-rail:hover .customer-track { animation-play-state: paused; }
+    .customer-pill { min-width: 210px; padding: 22px 26px; border: 1px solid #ccddf0; border-radius: 14px; background: white; text-align: center; font-weight: 700; color: #33465f; box-shadow: 0 8px 22px rgba(7,26,54,.05); }
+    .source-note { margin-top: 18px; color: var(--muted); font-size: .78rem; }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+
+    .presence { position: relative; background: #fff; }
+    .presence-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 62px; align-items: center; }
+    .map-panel { position: relative; min-height: 640px; border-radius: 28px; overflow: hidden; background: radial-gradient(circle at 60% 40%, #173e70, var(--navy) 65%); box-shadow: var(--shadow); }
+    .map-panel svg { width: 100%; height: 100%; min-height: 640px; }
+    .map-shape { fill: #174d88; stroke: #6fb4fb; stroke-width: 2; filter: drop-shadow(0 18px 22px rgba(0,0,0,.3)); }
+    .map-line { fill: none; stroke: rgba(143,196,255,.3); stroke-width: 1.2; stroke-dasharray: 5 7; }
+    .map-pin circle { fill: var(--red); stroke: #fff; stroke-width: 3; }
+    .map-pin .pulse { fill: none; stroke: var(--red); stroke-width: 2; animation: pulse 2s infinite; transform-box: fill-box; transform-origin: center; }
+    .map-pin text { fill: #fff; font: 600 13px "DM Sans"; paint-order: stroke; stroke: var(--navy); stroke-width: 4px; }
+    .map-pin .sub { fill: #a8c9ed; font-size: 10px; font-weight: 500; }
+    @keyframes pulse { 0% { transform: scale(.55); opacity: .9; } 100% { transform: scale(2.3); opacity: 0; } }
+    .presence-copy > p { margin-top: 22px; color: var(--muted); }
+    .locations { display: grid; gap: 12px; margin-top: 30px; }
+    .location { display: grid; grid-template-columns: 54px 1fr; gap: 14px; align-items: center; padding: 15px; border: 1px solid var(--line); border-radius: 14px; }
+    .location-code { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 12px; background: var(--navy); color: #fff; font-weight: 700; }
+    .location b { display: block; }
+    .location span { color: var(--muted); font-size: .87rem; }
+    .map-cta { margin-top: 30px; padding: 28px; border-radius: 18px; background: var(--ice); }
+    .map-cta p { margin: 8px 0 18px; color: var(--muted); }
+
+    footer { padding: 54px 0 28px; background: var(--navy); color: #fff; }
+    .footer-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 40px; align-items: end; }
+    footer img { width: 190px; background: white; border-radius: 8px; padding: 8px 12px; }
+    .footer-copy { margin-top: 18px; max-width: 520px; color: rgba(255,255,255,.62); }
+    .footer-contact { text-align: right; }
+    .footer-contact a { display: block; text-decoration: none; margin: 3px 0; }
+    .copyright { margin-top: 38px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.48); font-size: .8rem; display: flex; justify-content: space-between; gap: 20px; }
+
+    .whatsapp-float {
+      position: fixed; z-index: 100; right: 22px; bottom: 22px; width: 62px; height: 62px; display: grid; place-items: center;
+      border-radius: 50%; background: #25d366; color: #fff; box-shadow: 0 14px 34px rgba(37,211,102,.38); text-decoration: none;
+      animation: float 2.8s ease-in-out infinite;
+    }
+    .whatsapp-float svg { width: 30px; height: 30px; }
+    .whatsapp-float::before { content: "Discuss your requirement"; position: absolute; right: 74px; width: max-content; padding: 8px 12px; border-radius: 8px; background: var(--navy); color: #fff; font-size: .78rem; font-weight: 700; opacity: 0; transform: translateX(8px); transition: .25s; pointer-events: none; }
+    .whatsapp-float:hover::before { opacity: 1; transform: none; }
+    @keyframes float { 50% { transform: translateY(-5px); } }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .75s ease, transform .75s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 960px) {
+      .section { padding: 82px 0; }
+      .nav-links { display: none; position: absolute; top: 78px; left: 0; right: 0; padding: 20px; background: #fff; box-shadow: var(--shadow); flex-direction: column; align-items: stretch; }
+      .nav-links.open { display: flex; }
+      .menu-button { display: block; }
+      .hero-grid, .about-grid, .presence-grid { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      .hero-grid { padding: 90px 0 110px; }
+      .profile-card { max-width: 590px; }
+      .section-head { grid-template-columns: 1fr; gap: 20px; }
+      .action-grid { grid-template-columns: repeat(3, 1fr); }
+      .action { border-bottom: 1px solid var(--line); }
+      .product-list { grid-template-columns: repeat(2, 1fr); }
+      .industries-grid { grid-template-columns: repeat(2, 1fr); }
+      .map-panel { min-height: 580px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-contact { text-align: left; }
+    }
+
+    @media (max-width: 620px) {
+      .container { width: min(100% - 26px, 1160px); }
+      .topbar .container { justify-content: center; }
+      .topbar-meta span:first-child, .topbar > .container > span { display: none; }
+      .brand img { width: 154px; }
+      h1 { font-size: clamp(2.8rem, 15vw, 4.7rem); }
+      .hero-grid { padding-top: 70px; gap: 42px; }
+      .hero-actions .button { width: 100%; }
+      .profile-card { padding: 28px; }
+      .quick-actions { margin-top: -24px; }
+      .action-grid { grid-template-columns: 1fr 1fr; }
+      .action:nth-child(even) { border-right: 0; }
+      .about-visual { min-height: 440px; padding: 30px; }
+      .capability-tags { left: 30px; right: 30px; bottom: 30px; }
+      .about-points, .product-list, .industries-grid { grid-template-columns: 1fr; }
+      .slide { aspect-ratio: 1.3/1; }
+      .slide img { object-position: 50% center; }
+      .slide-overlay { padding: 65px 20px 18px; }
+      .slide-overlay p { display: none; }
+      .map-panel, .map-panel svg { min-height: 530px; }
+      .copyright { flex-direction: column; }
+      .whatsapp-float { right: 14px; bottom: 14px; width: 56px; height: 56px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>Marking · Automation · Traceability · Inspection</span>
+      <div class="topbar-meta">
+        <span><a href="mailto:punesales@emtexispl.com">punesales@emtexispl.com</a></span>
+        <span><a href="tel:+919999465413">+91 99994 65413</a></span>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container">
+      <a class="brand" href="#home" aria-label="EMTEX home">
+        <img src="assets/emtex-logo.webp" onerror="this.src='https://emtexispl.com/logo.png'" alt="EMTEX Industrial Solutions">
+      </a>
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="nav-links">
+        <a href="#about-me">About Me</a>
+        <a href="#about-emtex">About EMTEX</a>
+        <a href="#products">Products</a>
+        <a href="#industries">Industries</a>
+        <a href="#customers">Customers</a>
+        <a href="#presence">Presence</a>
+        <a class="nav-cta" href="https://wa.me/919999465413?text=Hello%20Swapnil%2C%20I%20would%20like%20to%20discuss%20an%20EMTEX%20industrial%20solution.%20Please%20contact%20me." target="_blank" rel="noopener">Discuss Requirement</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Industrial Solutions · West India</p>
+          <h1>Permanent marks.<span>Connected manufacturing.</span></h1>
+          <p class="hero-lead">Helping manufacturers select and implement reliable marking, laser processing, automation and traceability systems—from application study and trials to integration and after-sales support.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/919999465413?text=Hello%20Swapnil%2C%20I%20would%20like%20to%20discuss%20an%20EMTEX%20industrial%20solution.%20Our%20application%20is%3A%20" target="_blank" rel="noopener">Discuss Your Application</a>
+            <a class="button button-secondary" href="#products">Explore Solutions</a>
+            <a class="button button-ghost" href="Swapnil_Jagtap_EMTEX.vcf" download>Save Contact</a>
+          </div>
+        </div>
+
+        <article class="profile-card reveal" id="about-me">
+          <!-- To use a photo later, replace the next div with:
+          <img class="avatar" src="assets/swapnil-jagtap.jpg" alt="Swapnil Jagtap"> -->
+          <div class="avatar" aria-label="Swapnil Jagtap initials">SJ</div>
+          <h3>Swapnil Jagtap</h3>
+          <p class="profile-role">Regional Sales Manager – West India</p>
+          <div class="profile-meta">
+            <span><b>Company</b> EMTEX Industrial Solutions Pvt. Ltd.</span>
+            <span><b>Phone</b> +91 99994 65413</span>
+            <span><b>Email</b> punesales@emtexispl.com</span>
+            <span><b>Base</b> Pune, Maharashtra, India</span>
+          </div>
+          <div class="mini-rule"></div>
+          <p class="profile-note">Mechanical engineer and B2B technical-sales professional focused on turning industrial applications into practical, serviceable solutions.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="quick-actions container" aria-label="Contact actions">
+      <div class="action-grid">
+        <a class="action" href="Swapnil_Jagtap_EMTEX.vcf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+          Save Contact <small>Download vCard</small>
+        </a>
+        <a class="action" href="https://wa.me/919999465413?text=Hello%20Swapnil%2C%20I%20would%20like%20to%20discuss%20an%20EMTEX%20machine%20or%20automation%20requirement." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.6 9.6 0 0 1-4-1l-5 1 1-4a8.7 8.7 0 1 1 17-4.5Z"/></svg>
+          WhatsApp <small>Fast enquiry</small>
+        </a>
+        <a class="action" href="mailto:punesales@emtexispl.com?subject=EMTEX%20Solution%20Enquiry&body=Hello%20Swapnil%2C%0A%0AI%20would%20like%20to%20discuss%20the%20following%20requirement%3A%0A%0ACompany%3A%0AApplication%3A%0AMaterial%3A%0ARequired%20cycle%20time%3A%0A%0ARegards%2C">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          Email <small>Share RFQ</small>
+        </a>
+        <a class="action" href="https://teams.microsoft.com/l/meeting/new?attendees=punesales%40emtexispl.com&subject=EMTEX%20Industrial%20Solution%20Discussion&content=Discussion%20with%20Swapnil%20Jagtap%20regarding%20an%20industrial%20marking%2C%20laser%20or%20traceability%20requirement." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="m17 10 4-2v8l-4-2M7 9h6M10 9v7"/></svg>
+          Teams Meeting <small>Schedule online</small>
+        </a>
+        <a class="action" href="https://www.emtexispl.com/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+          EMTEX Website <small>Official website</small>
+        </a>
+        <a class="action" href="assets/emtex-portfolio-qr.png" download="EMTEX_Swapnil_Jagtap_QR.png">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM15 14h2v2h-2zM19 14h1v3h-3M14 19h3v1h-3zM20 19v1"/></svg>
+          QR Code <small>Download PNG</small>
+        </a>
+      </div>
+    </div>
+
+    <section class="section" id="about-emtex">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <p class="eyebrow">Engineering Since</p>
+          <div class="big-number">19<span>87</span></div>
+          <p>Industrial marking, engraving, laser processing, automation and customized integration backed by application support.</p>
+          <div class="capability-tags">
+            <span>Mark</span><span>Read</span><span>Validate</span><span>Interlock</span><span>Record</span><span>Trace</span>
+          </div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">About EMTEX</p>
+          <h2>One partner from part identification to connected data.</h2>
+          <p>EMTEX Industrial Solutions brings together industrial marking, engraving, laser cutting and welding, special-purpose automation, vision, customized software and traceability. The objective is straightforward: give every component a permanent identity and connect that identity with production and quality data.</p>
+          <p>Solutions are selected around the actual component, material, mark requirement, cycle time, line condition and data architecture—then supported through trials, integration, training and after-sales service.</p>
+          <div class="about-points">
+            <div class="about-point"><b>Application-led selection</b><span>Component trials and process review before recommendation.</span></div>
+            <div class="about-point"><b>Customized integration</b><span>Standalone machines, SPMs, robotics, vision and line connectivity.</span></div>
+            <div class="about-point"><b>Made for production</b><span>Permanent identification designed for industrial environments.</span></div>
+            <div class="about-point"><b>Lifecycle support</b><span>Installation, training, service and application assistance.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Product Portfolio</p><h2>Industrial machines that leave a permanent impression.</h2></div>
+          <p class="section-copy">Swipe or use the arrows to explore four core product families. EMTEX also supplies SPMs, robotic integration, traceability, vision inspection, laser cleaning and customized software.</p>
+        </div>
+
+        <div class="slider reveal" aria-label="EMTEX product slider">
+          <div class="slides">
+            <article class="slide">
+              <img src="assets/dot-pin-marking.jpg" alt="EMTEX dot pin marking machine range" loading="eager">
+              <div class="slide-overlay"><div><h3>Dot Pin Marking Machines</h3><p>Tabletop, portable, handheld, automated and robotic integration models.</p></div></div>
+            </article>
+            <article class="slide">
+              <img src="assets/laser-marking.jpg" alt="EMTEX laser marking machine range" loading="lazy">
+              <div class="slide-overlay"><div><h3>Laser Marking Machines</h3><p>Fiber, MOPA, UV, CO₂, 3D, portable, enclosed and line-integrated systems.</p></div></div>
+            </article>
+            <article class="slide">
+              <img src="assets/laser-cutting.jpg" alt="EMTEX laser cutting machine" loading="lazy">
+              <div class="slide-overlay"><div><h3>Laser Cutting Machines</h3><p>Sheet and tube laser cutting solutions configured to material and production needs.</p></div></div>
+            </article>
+            <article class="slide">
+              <img src="assets/laser-welding.jpg" alt="EMTEX handheld laser welding machine" loading="lazy">
+              <div class="slide-overlay"><div><h3>Laser Welding Machines</h3><p>High-speed handheld laser welding for clean, precise and repeatable joints.</p></div></div>
+            </article>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-arrow prev" aria-label="Previous product">←</button>
+          <div class="dots" aria-label="Choose product slide"></div>
+          <button class="slider-arrow next" aria-label="Next product">→</button>
+        </div>
+
+        <div class="product-list reveal">
+          <div class="product-mini"><span>01 · MARK</span><h3>Permanent Identification</h3><p>Dot-peen and laser marks for text, serials, logos, QR and DataMatrix.</p></div>
+          <div class="product-mini"><span>02 · PROCESS</span><h3>Laser Processing</h3><p>Cutting, tube cutting, welding, engraving and cleaning solutions.</p></div>
+          <div class="product-mini"><span>03 · AUTOMATE</span><h3>SPM & Robotics</h3><p>Fixtures, auto-clamping, conveyors, safety and production-line integration.</p></div>
+          <div class="product-mini"><span>04 · CONNECT</span><h3>Traceability & Vision</h3><p>Code reading, validation, interlocks, genealogy and production records.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="industries">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Industries We Serve</p><h2>Built around real components and production conditions.</h2></div>
+          <p class="section-copy">From deep marks on heavy fabricated parts to high-contrast codes on sensitive plastics, each application is assessed for permanence, readability, speed, integration and total operating value.</p>
+        </div>
+        <div class="industries-grid">
+          <article class="industry-card reveal" data-index="01"><div class="industry-icon">◉</div><h3>Automotive & EV</h3><p>Engine and transmission parts, seating, suspension, castings, electrical components, batteries and assemblies.</p></article>
+          <article class="industry-card reveal" data-index="02"><div class="industry-icon">ϟ</div><h3>Electrical & Electronics</h3><p>Switchgear, cables, control modules, lamps, PCBs, connectors and precision housings.</p></article>
+          <article class="industry-card reveal" data-index="03"><div class="industry-icon">⚙</div><h3>Engineering & Fabrication</h3><p>Machined parts, tools, fasteners, panels, sheet metal, heavy parts and fabricated structures.</p></article>
+          <article class="industry-card reveal" data-index="04"><div class="industry-icon">✚</div><h3>Medical & Pharma</h3><p>Medical devices, surgical instruments, UDI marking, packaging and traceable production.</p></article>
+          <article class="industry-card reveal" data-index="05"><div class="industry-icon">⬡</div><h3>Casting & Foundries</h3><p>Permanent identification for rough, hot, coated or hard-to-handle components and batches.</p></article>
+          <article class="industry-card reveal" data-index="06"><div class="industry-icon">▦</div><h3>Food, FMCG & Appliances</h3><p>Packaging, branding, date and batch coding, utensils, home appliances and consumer products.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section customers" id="customers">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Customer Base</p><h2>Experience across leading industrial organizations.</h2></div>
+          <p class="section-copy">Selected customer names shown in EMTEX’s supplied company and application material.</p>
+        </div>
+      </div>
+      <div class="customer-rail" aria-label="Selected EMTEX customers">
+        <div class="customer-track">
+          <div class="customer-pill">Jindal Steel & Power</div><div class="customer-pill">Schneider Electric</div><div class="customer-pill">Spark Minda</div><div class="customer-pill">Motherson</div><div class="customer-pill">Continental</div><div class="customer-pill">Honeywell</div><div class="customer-pill">Sandhar</div><div class="customer-pill">Jaya Hind Industries</div><div class="customer-pill">BCH Electric</div><div class="customer-pill">Neolite</div><div class="customer-pill">Sadhu Forging</div><div class="customer-pill">Maxop Engineering</div><div class="customer-pill">Kent</div><div class="customer-pill">Eicher Engines</div>
+          <div class="customer-pill">Jindal Steel & Power</div><div class="customer-pill">Schneider Electric</div><div class="customer-pill">Spark Minda</div><div class="customer-pill">Motherson</div><div class="customer-pill">Continental</div><div class="customer-pill">Honeywell</div><div class="customer-pill">Sandhar</div><div class="customer-pill">Jaya Hind Industries</div><div class="customer-pill">BCH Electric</div><div class="customer-pill">Neolite</div><div class="customer-pill">Sadhu Forging</div><div class="customer-pill">Maxop Engineering</div><div class="customer-pill">Kent</div><div class="customer-pill">Eicher Engines</div>
+        </div>
+      </div>
+      <div class="container"><p class="source-note">Customer names are presented as portfolio references, not as endorsements.</p></div>
+    </section>
+
+    <section class="section presence" id="presence">
+      <div class="container presence-grid">
+        <div class="map-panel reveal" aria-label="EMTEX India and Dubai presence map">
+          <svg viewBox="0 0 560 690" role="img" aria-labelledby="mapTitle mapDesc">
+            <title id="mapTitle">EMTEX service presence</title>
+            <desc id="mapDesc">Delhi NCR head office and factory; Pune, Chennai and Kolkata sales and service centers; Dubai sales and service partner.</desc>
+            <path class="map-line" d="M92 232C188 190 248 170 314 165M314 165C352 250 382 325 414 405M314 165C388 192 440 240 457 290M314 165C286 290 248 390 226 475M92 232C198 355 280 460 414 405"/>
+            <path class="map-shape" d="M239 72l43 15 26-12 28 16 20-2 9 24 28 16 1 24 22 15-5 22 30 26-4 35 20 16-9 22 23 30-10 28 8 23-18 17-4 40-28 13-18 44-28 31-20 50-19 60-24-35-12-42-28-28-18-42-18-20-16-38-35-22-4-27-32-17-6-26-25-13-18-26 7-25-20-28 12-35-8-25 23-18 10-35 30-3 17-25 31 3 21-18 25 10 25-18 28 14 30-6 28 26 29-5 25 18-5 27 14 22-8 27 12 29-18 28 10 23-19 19-3 27-28 18 4 27-27 9-9 29-27-8-21 25-25-2-11 28-30-11-17 18-26-18-29 7-14-25-33-1-8-31z" transform="translate(-37 12) scale(.82)"/>
+            <g class="map-pin" transform="translate(314 165)"><circle class="pulse" r="10"/><circle r="7"/><text x="14" y="-5">Delhi NCR</text><text class="sub" x="14" y="11">Head Office & Factory</text></g>
+            <g class="map-pin" transform="translate(226 475)"><circle class="pulse" r="10"/><circle r="7"/><text x="14" y="-4">Pune</text><text class="sub" x="14" y="12">Sales & Service</text></g>
+            <g class="map-pin" transform="translate(414 405)"><circle class="pulse" r="10"/><circle r="7"/><text x="14" y="-4">Chennai</text><text class="sub" x="14" y="12">Sales & Service</text></g>
+            <g class="map-pin" transform="translate(457 290)"><circle class="pulse" r="10"/><circle r="7"/><text x="14" y="-4">Kolkata</text><text class="sub" x="14" y="12">Sales & Service</text></g>
+            <g class="map-pin" transform="translate(92 232)"><circle class="pulse" r="10"/><circle r="7"/><text x="-5" y="-17">Dubai</text><text class="sub" x="-5" y="-2">Sales & Service Partner</text></g>
+            <text x="280" y="652" text-anchor="middle" fill="#648ab5" font-family="DM Sans" font-size="11" letter-spacing="2">INDIA · UAE SERVICE NETWORK</text>
+          </svg>
+        </div>
+        <div class="presence-copy reveal">
+          <p class="eyebrow">Our Presence</p>
+          <h2>Local response. National reach. Export support.</h2>
+          <p>EMTEX combines manufacturing and corporate operations in Delhi NCR with regional sales and service coverage in India and partner support in Dubai.</p>
+          <div class="locations">
+            <div class="location"><div class="location-code">DEL</div><div><b>Delhi NCR</b><span>Head Office · Patparganj, Delhi | Factory · Greater Noida</span></div></div>
+            <div class="location"><div class="location-code">PNQ</div><div><b>Pune</b><span>Sales & Service Center · West India</span></div></div>
+            <div class="location"><div class="location-code">MAA</div><div><b>Chennai</b><span>Sales & Service Center · South India</span></div></div>
+            <div class="location"><div class="location-code">CCU</div><div><b>Kolkata</b><span>Sales & Service Center · East India</span></div></div>
+            <div class="location"><div class="location-code">DXB</div><div><b>Dubai</b><span>Sales & Service Partner · Export Support</span></div></div>
+          </div>
+          <div class="map-cta">
+            <h3>Have a component to mark, cut, weld or trace?</h3>
+            <p>Share the component drawing, material, marking content, production quantity and cycle-time expectation for an application review.</p>
+            <a class="button button-primary" href="https://wa.me/919999465413?text=Hello%20Swapnil%2C%20I%20have%20an%20EMTEX%20application%20requirement.%20I%20would%20like%20to%20share%20the%20component%20details%20for%20technical%20review." target="_blank" rel="noopener">Start Application Review</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/emtex-logo.webp" onerror="this.src='https://emtexispl.com/logo.png'" alt="EMTEX Industrial Solutions">
+          <p class="footer-copy">Industrial marking, automation, traceability, inspection and laser processing solutions—supported from application study to commissioning.</p>
+        </div>
+        <div class="footer-contact">
+          <strong>Swapnil Jagtap</strong>
+          <span>Regional Sales Manager – West India</span>
+          <a href="tel:+919999465413">+91 99994 65413</a>
+          <a href="mailto:punesales@emtexispl.com">punesales@emtexispl.com</a>
+          <a href="https://www.emtexispl.com/" target="_blank" rel="noopener">www.emtexispl.com</a>
+        </div>
+      </div>
+      <div class="copyright"><span>© <span id="year"></span> EMTEX Industrial Solutions Pvt. Ltd.</span><span>Marking · Automation · Traceability · Inspection</span></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/919999465413?text=Hello%20Swapnil%2C%20I%20visited%20your%20EMTEX%20digital%20portfolio%20and%20would%20like%20to%20discuss%20an%20industrial%20solution.%20My%20requirement%20is%3A%20" target="_blank" rel="noopener" aria-label="Contact Swapnil on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.6 9.6 0 0 1-4-1l-5 1 1-4a8.7 8.7 0 1 1 17-4.5Z"/><path d="M9 9.5c.5 2 2 3.5 4 4l1.2-1.2c.3-.3.7-.4 1.1-.2l2 .8"/></svg>
+  </a>
+
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }));
+
+    const slides = document.querySelector('.slides');
+    const slideItems = [...document.querySelectorAll('.slide')];
+    const dots = document.querySelector('.dots');
+    let current = 0;
+    let autoplay;
+    slideItems.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.className = 'dot' + (index === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Show product ${index + 1}`);
+      dot.addEventListener('click', () => showSlide(index, true));
+      dots.appendChild(dot);
+    });
+    const dotItems = [...dots.children];
+    function showSlide(index, reset = false) {
+      current = (index + slideItems.length) % slideItems.length;
+      slides.style.transform = `translateX(-${current * 100}%)`;
+      dotItems.forEach((dot, i) => dot.classList.toggle('active', i === current));
+      if (reset) startAutoplay();
+    }
+    document.querySelector('.prev').addEventListener('click', () => showSlide(current - 1, true));
+    document.querySelector('.next').addEventListener('click', () => showSlide(current + 1, true));
+    function startAutoplay() {
+      clearInterval(autoplay);
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) autoplay = setInterval(() => showSlide(current + 1), 5200);
+    }
+    startAutoplay();
+
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
